@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="shortcut icon" href="../eduford_img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-----Header Section-->
+    <section class="contact-header">
+        <nav>
+            <a href="index.html"><img src="../eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class='bx bx-x' onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+        </nav>
+
+        <div class="contact-word">
+                <h3>Contact Us</h3>
+        </div>
+    </section>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8069790.435797271!2d8.677456999999999!3d9.0338725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2sng!4v1699707663143!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+   <section class="address">
+        <div id="address-content">
+            <div class="add">
+                <i class='bx bxs-home' ></i>
+                <span>
+                    <p>3, Ajegunle Ikorodu Road</p>
+                    <h6>Lagos Ibadan Expressway</h6>
+                </span>
+            </div>
+
+            <div class="add">
+                <i class='bx bxs-phone'></i>
+                <span>
+                    <p>+234-9043150851</p>
+                    <h6>From mondays to saturdays 10am to 6pm</h6>
+                </span>
+            </div>
+            <div class="add">
+                <i class='bx bx-envelope'></i>
+                <span>
+                    <p>3, Ajegunle Ikorodu Road</p>
+                    <h6>Lagos Ibadan Expressway</h6>
+                </span>
+            </div>
+        </div>
+
+        <div id="address-form">
+                <form action="form handler.php" method="post">
+                    <div class="add-input">
+                        <ul>
+                            <li><input type="text" id="name" name="name" placeholder="Enter your name" required></li>
+                            <li><input type="email" id="email" name="email"  placeholder="Enter email address" required></li>
+                            <li><input type="text" id="subject" name="subject" placeholder="Enter subject" required></li>
+                        </ul>
+                    </div>
+                    <div class="add-input">
+                        <textarea name="message" id="message" name="message" rows="10" placeholder="Message" required></textarea>
+                        <label for="Message"></label>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+        </div>
+   </section>
+  
+
+    <!---About Us-->
+    <section class="About">
+        <h3>About Us</h3>
+        <p>To know more about us, you can visit our website or on our social media pages below<br>Visit us now to get a whole new experience</p>
+        <div class="socials">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </section>
+
+    <script>
+
+        let navLinks = document.getElementById("navLinks");
+    
+        function showMenu () {
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu () {
+            navLinks.style.right = "-200px";
+        }
+    
+    
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="shortcut icon" href="../eduford_img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-----Header Section-->
+    <section class="blog-header">
+        <nav>
+            <a href="index.html"><img src="../eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class='bx bx-x' onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+        </nav>
+
+        <div class="blog-word">
+                <h3>Our Certificate & Online Programs for 2023</h3>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="blog-start">
+            <img src="../eduford_img/certificate.jpg">
+            <div class="blog-details">
+                <h3>Our Certificate and Online Programs for 2023</h3>
+                <p>Welcome to our University's blog. We are a prestigeous university focused on training and building great minds. Our University is a well known and reputable school for learning and building creative minds. We have created an environment where learning has become easy and conducive for anyone at all. This great school started in the year 2010, and till date we have remained at the top. </p>
+                <p>We have intensive lecture scheme we follow, which serves as a guide to us. Our courses are the world's current scheme, which makes us up to date. We also have weekly assessments to help get the best out of our students and we also have weekly test which holds every friday. This is to ensure that the students are up go date and are following whatever they are being taught.</p>
+                <p>We also ensure that learning HTML, CSS, Javascript and other programming languages is made extremely easy. Our tutors are qualified and specialized in their fields which makes it easy to transmit Knowledge to our students. We have also created a platform in which our best students get scholarship programs before they graduate, even in their first year of admission. We also have made sure that most of our students get quality and high paying Jobs in different tech companies and industries</p>
+                <p>If you want to know more about our prestigeous school you can visit our website or our social media handles below. We would be more than happy to hear from you!</p>
+            </div>
+        </div>
+
+        <div class="categories">
+            <h3>Post Categories</h3>
+
+            <div class="categ">
+                <div class="column-cat">
+                    <uL>
+                        <li>Business Analytics</li>
+                        <li>Data Science</li>
+                        <li>Machine Learning</li>
+                        <li>Computer Science</li>
+                        <li>AutoCad</li>
+                        <li>Journalism</li>
+                        <li>Commerce</li>
+                    </uL>
+                </div>
+
+                <div class="numb">
+                    <ul>
+                        <li>21</li>
+                        <li>28</li>
+                        <li>15</li>
+                        <li>34</li>
+                        <li>42</li>
+                        <li>22</li>
+                        <li>13</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+       
+    </section>
+
+    <section class="footer">
+        <div class="footer-sec">
+            <h3>Leave a comment</h3>
+                <form>
+                    <div class="comment-sec">
+                    <input type="text" id="name" required placeholder="Enter Name"> 
+                    </div>
+
+                    <div class="comment-sec">
+                        <input type="email" id="email" required placeholder="Enter Email"> 
+                    </div>
+
+                    <div class="comment-sec">
+                        <textarea name="message" id="message" rows="8" placeholder="Your Comment"></textarea>
+                        <label for="message"></label>
+                    </div>
+                </form>
+
+                <a href=""><button class="submit" type="submit">Post Comment</button></a>
+        </div>
+    </section>
+  
+
+    <!---About Us-->
+    <section class="About">
+        <h3>About Us</h3>
+        <p>To know more about us, you can visit our website or on our social media pages below<br>Visit us now to get a whole new experience</p>
+        <div class="socials">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </section>
+
+    <script>
+
+        let navLinks = document.getElementById("navLinks");
+    
+        function showMenu () {
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu () {
+            navLinks.style.right = "-200px";
+        }
+    
+    
+        </script>
+
+</body>
+</html>

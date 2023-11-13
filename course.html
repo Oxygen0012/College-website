@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="shortcut icon" href="../eduford_img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-----Header Section-->
+    <section class="Sub-header">
+        <nav>
+            <a href="index.html"><img src="../eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class='bx bx-x' onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+        </nav>
+
+        <h3>Our Courses</h3>
+    </section>
+
+    <!--Courses Section-->
+    <section class="Courses">
+            <h1>Courses We Offer</h1>
+            <p>We Offer one of the best online course available</p>
+            <div class="courses-box">
+                <div class="text">
+                    <h2>Intermediate</h2>
+                    <p>We offer quality and flexible courses that will help elevate your knowledge of coding and programming as a whole. Get ready to experience extra-ordinary lectures that will blow your mind away. Let's get started</p>
+                </div>
+
+                <div class="text">
+                    <h2>Degree</h2>
+                    <p>We offer quality and flexible courses that will help elevate your knowledge of coding and programming as a whole. Get ready to experience extra-ordinary lectures that will blow your mind away. Let's get started</p>
+                </div>
+
+                <div class="text">
+                    <h2>Post-graduate</h2>
+                    <p>We offer quality and flexible courses that will help elevate your knowledge of coding and programming as a whole. Get ready to experience extra-ordinary lectures that will blow your mind away. Let's get started</p> 
+                </div>
+            </div>
+    </section>
+
+    <!--Facilities Section-->
+    <section class="Facilities">
+        <div class="fac">
+            <h1>Our Facilities</h1>
+            <p>We have one of the best facilites available worldwide</p>
+        </div>
+        <div class="facilites-general">
+            <div class="facilities-row">
+                <img src="../eduford_img/library.png">
+                <h2>World Class Library</h2>
+                <p>We have a standard library where we have books that inspire you to achieveing your goals</p>
+            </div>
+
+            <div class="facilities-row">
+                <img src="../eduford_img/basketball.png">
+                <h2>Largest Play Ground</h2>
+                <p>We provide you with the best facilities for your sporting activities</p>
+            </div>
+
+            <div class="facilities-row">
+                <img src="../eduford_img/cafeteria.png">
+                <h2>Tasty and Healthy Food</h2>
+                <p>We also provide you with a conducive environment for learning</p>
+            </div>
+        </div>
+    </section>
+
+    <!---About Us-->
+    <section class="About">
+        <h3>About Us</h3>
+        <p>To know more about us, you can visit our website or on our social media pages below<br>Visit us now to get a whole new experience</p>
+        <div class="socials">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </section>
+
+    
+    <script>
+
+        let navLinks = document.getElementById("navLinks");
+    
+        function showMenu () {
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu () {
+            navLinks.style.right = "-200px";
+        }
+    
+    
+        </script>
+</body>
+</html>
